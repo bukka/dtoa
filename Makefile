@@ -1,7 +1,7 @@
 # Makefile for dtoa-test
 
 CC = gcc
-CFLAGS = -Wall 
+CFLAGS = -Wall -gdwarf-2 -g3 -O0
 RM = rm -f
 
 obj = dtoa-test.o 
