@@ -21,16 +21,16 @@ void echo_dval(double dd, int mode, int ndigits)
 	int sign, decpt;
 	char *s = dtoa(dd, mode, ndigits, &decpt, &sign, NULL);
 	
-	printf(" %d | %3d | %-70s | %4d | %5d\n", mode, ndigits, s, sign, decpt);
+	printf(" %d | %2d | %-55s | %4d | %5d\n", mode, ndigits, s, sign, decpt);
 	freedtoa(s);
 }
 
 void echo_dvals(const char *title, double dd)
 {
-	printf("\n m |   p | %-70s | sign | decpt\n", title);
+	printf("\n m |    | %-55s | sign | decpt\n", title);
 	echo_dval(dd, 0, 0);
 	echo_dval(dd, 2, 17);
-	echo_dval(dd, 2, 100);
+	echo_dval(dd, 2, 50);
 }
 
 #define ECHO_CDV(_val) echo_dvals(#_val" in C", _val)
