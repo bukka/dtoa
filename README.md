@@ -6,9 +6,11 @@ using `make` command.
 ## Results
 
 These are results from dtoa-test at commit
-[f0be845](https://github.com/bukka/dtoa/blob/f0be845ce80dd71c14da2b22dfa33f058daa50ed/dtoa-test.c)
+[e1ffc0b7](https://github.com/bukka/dtoa/blob/e1ffc0b7d29e7d50a1649cbcc9612e85264163e3/dtoa-test.c)
 
 ```
+DBL_DIG: 15
+
  m |    | 0.5 in C                                                | sign | decpt
  0 |  0 | 5                                                       |    0 |     0
  2 | 17 | 5                                                       |    0 |     0
