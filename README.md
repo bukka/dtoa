@@ -1,4 +1,4 @@
-# Simple test for dtoa.c from David M. Gay
+# Simple test for dtoa from David M. Gay
 
 This is a simple test script in C for dtoa. It can be compiled
 using `make` command.
