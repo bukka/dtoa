@@ -38,6 +38,11 @@ void echo_dvals(const char *title, double dd)
 
 int main()
 {
+#ifdef DBL_DIG
+	printf("DBL_DIG: %d\n", DBL_DIG);
+#else
+	puts("DBL_DIG is not defined\n");
+#endif
 	/* echo C double values */
 	ECHO_CDV(0.5);
 	ECHO_CDV(0.9999);
